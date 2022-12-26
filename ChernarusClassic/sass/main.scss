@@ -90,7 +90,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url(/img/bg-1920-1080.jpg);
+		background-image: url('../img/1920_1080/bg.jpg');
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -165,7 +165,7 @@ header {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url(/img/aboutus-normal.png);
+	background-image: url('../img/1920_1080/aboutus.jpg');
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
@@ -218,7 +218,13 @@ header {
 
 	.card {
 		background-color: $dark-gray;
-		min-height: 400px;
+		min-height: 480px;
+
+		img {
+			object-fit: cover;
+
+			height: 300px;
+		}
 	}
 
 	.card-body {
@@ -231,7 +237,7 @@ header {
 
 .team {
 	position: relative;
-	background-image: url('/img/team-normal.png');
+	background-image: url('../img/1920_1080/team.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
@@ -259,6 +265,7 @@ header {
 
 		img {
 			height: 300px;
+			width: 100%;
 			object-fit: cover;
 		}
 
@@ -323,7 +330,7 @@ header {
 
 .contact {
 	position: relative;
-	background-image: url('/img/contact-normal.png');
+	background-image: url('../img/1920_1080/contact.jpg');
 	background-position: bottom;
 	background-attachment: fixed;
 	background-size: cover;
@@ -391,7 +398,7 @@ header {
 
 	header {
 		h1 {
-			font-size: 36px;
+			font-size: 33px;
 		}
 
 		p {
@@ -421,14 +428,22 @@ header {
 	}
 
 	.aboutus-hero {
-		background-image: url(/img/aboutus-normal.png);
+		background-image: url('../img/1920_1080/aboutus.jpg');
+	}
+
+	.team {
+		background-image: url('../img/1920_1080/team.jpg');
+	}
+
+	.contact {
+		background-image: url('../img/1920_1080/contact.jpg');
 	}
 }
 
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
-			background-image: url(/img/bg-1920-1080.jpg);
+			background-image: url('../img/1920_1080/bg.jpg');
 		}
 	}
 }
